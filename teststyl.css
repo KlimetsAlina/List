@@ -1,0 +1,34 @@
+
+.object{
+	width: 200px;
+	height: 200px;
+	background: #067782;
+	border-radius: 5px;
+    margin: 30px;
+	font-size: 18pt;
+	display: inline-block;
+    vertical-align: top;
+	}
+
+.object p {
+    margin-top: 30%;
+    padding: 5px;
+    
+}
+
+.object:hover p{
+	color: #e2e9c0; 			 
+}
+
+.object:first-child:hover {
+    background-image: url(images/bronson.jpg);
+    background-position: top;
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #067782; /* Цвет линии для остальных браузеров */
+    background-color: #067782; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+ 
+}
