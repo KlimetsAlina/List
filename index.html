@@ -3,7 +3,21 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-language" content="ru"/>
 <link rel="stylesheet" href="css/style.css">
-
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 <title>Главная</title>
 <meta name="description" content="Список твоих фильмов, сериалов, книг, музыки и может чего то ещё (:"/>
 </head>
@@ -33,10 +47,20 @@
 </div>
 
 
-    <button>Войти</button>
+      <a href="javascript:PopUpShow()"><button> Войти </button></a>
     <button>Зарегистрироваться</button>
 
 
+	<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <form method="POST" action="php/login.php">
+        <input type="text" placeholder="Логин" name="login">
+        <input type="password" placeholder="Пароль" name="password">
+        <input type="submit" value="Войти" name="submit" class="butsubmit">
+        </form>
+    <a href="javascript:PopUpHide()">Hide popup</a>
+    </div>
+	</div>
 
 </div>
 </body>
