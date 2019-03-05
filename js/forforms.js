@@ -9,5 +9,5 @@ var keep_data = elem.parentNode.innerHTML;
 var end_str = keep_data.indexOf("<a class");
 var data_name = keep_data.substring(0,end_str);
 	var formdel = document.forms.deleteform;
-	formdel.namecontent.placeholder = data_name;
+	formdel.namecontent.value = data_name;
 }

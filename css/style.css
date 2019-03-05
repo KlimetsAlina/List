@@ -82,7 +82,7 @@ button {
 }
 
 .list li {
-    font-size: large;
+    font-size: 14pt;
     display: block;
     margin-bottom: 10px;
     background: #1CB1BF;
@@ -93,6 +93,12 @@ button {
     background: #067782;
     padding: 10px;
     box-shadow: 5px 5px 5px black;
+}
+
+.list li:last-child:hover {
+    box-shadow: 5px 5px 5px black;
+    color: #e2e9c0;
+	cursor: pointer;
 }
 
 dialog::backdrop {
@@ -135,12 +141,47 @@ dialog input {
     width: 40%;
 }
 
-dialog input:hover {
+.dialog-button:hover {
     box-shadow: 2px 2px 5px #061619;
 }
 
 dialog h3 {
     margin: 0 0 20px 0;
 }
+
+
+/* * delete icon * */
+.del_a {
+    position: relative;
+    display: none;
+    margin: 3px 3px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    float: right;
+}
+
+.list li:hover .del_a {
+    display: initial;
+}
+
+.del_a:hover {
+  opacity: 1;
+}
+.del_a:before, .del_a:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #0C2229;
+}
+.del_a:before {
+  transform: rotate(45deg);
+}
+.del_a:after {
+  transform: rotate(-45deg);
+}
+
 
 

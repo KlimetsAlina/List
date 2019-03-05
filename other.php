@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['id_category'] = 3;
+$_SESSION['id_category'] = 5;
 include('php/selectContent.php');
 ?>
 <!DOCTYPE html>
@@ -10,37 +10,23 @@ include('php/selectContent.php');
 <meta http-equiv="Content-language" content="ru"/>
 <link rel="stylesheet" type="text/css" href="css/dialog-polyfill.css">
 <link rel="stylesheet" href="css/style.css">
-<title>Твои книги</title>
-<meta name="description" content="Книги, прочитанные тобою"/>
+<title>Другое</title>
+<meta name="description" content="Всё, что не уместилось"/>
 </head>
 <body>
 <nav>
 	<ul>
-		<li onclick="location.href='index.php';"><a href="index.php" >Home</a></li>
+		<li onclick="location.href='index.php';"><a href="index.php">Home</a></li>
 		<li onclick="location.href='films.php';"><a href="films.php">Фильмы</a></li>
 		<li onclick="location.href='serials.php';"><a href="serials.php">Сериалы</a></li>
-		<li class="selected"><a href="#">Книги</a></li>
+		<li onclick="location.href='books.php';"><a href="books.php">Книги</a></li>
 		<li onclick="location.href='music.php';"><a href="music.php">Музыка</a></li>
-		<li onclick="location.href='other.php';"><a href="other.php">Другое</a></li>
+		<li class="selected" onclick="location.href='other.php';"><a href="other.php">Другое</a></li>
 	</ul>
 	</nav>
-	
 <div id="allcontent">
 <div class="list">
-   <h2>Прочитанные</h2>
-    <ul>
-	<?php 
-	$arr_length = count($array_content1);
-	for($i = 0; $i < $arr_length; $i++) {	
-	echo '<li>' . $array_content1[$i] . '<a class="del_a" onclick="select_content(this);"></a></li>';
-	}
-	?>	
-    <li id="show1" onclick="setwatch(1)"> + </li>
-</ul>
-</div>
-
-<div class="list">
-   <h2>Хочу прочесть</h2>
+   <h2>Посмотреть</h2>
     <ul>
 	<?php 
 	$arr_length = count($array_content0);
@@ -75,6 +61,5 @@ include('php/selectContent.php');
 <script src="js/dialog-polyfill.js"></script>
 <script src="js/dialog.js"></script>
 <script src="js/forforms.js"></script>
-
 </body>
 </html>

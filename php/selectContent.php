@@ -42,6 +42,4 @@ $j =0;
 		//массивы для хранения названий нужного контента, которые будут уже выводиться на странице
 	$array_content1 = get_name_arr($ids_content1, $connection, $id_categ);
 	$array_content0 = get_name_arr($ids_content0, $connection, $id_categ);
-
-	
 ?>

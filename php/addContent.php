@@ -48,6 +48,8 @@ switch ($id_categ) {
     case 4:
         header('Location: ../music.php');
         break;
+    case 5:
+        header('Location: ../other.php');
+        break;
 }
-
 ?>
