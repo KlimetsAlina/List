@@ -13,3 +13,7 @@
 ![list3](https://user-images.githubusercontent.com/21987562/53701710-d8d8da80-3e10-11e9-8b7e-a00f346d22bd.jpg)
 
 ![list4](https://user-images.githubusercontent.com/21987562/53701733-e7bf8d00-3e10-11e9-80a3-515b95823321.png)
+
+![listdel](https://user-images.githubusercontent.com/21987562/53829112-76a6e380-3f90-11e9-94e1-2e0fa8a78cb7.jpg)
+
+![listdel1](https://user-images.githubusercontent.com/21987562/53829119-7ad30100-3f90-11e9-9c35-019040883c67.jpg)
